@@ -1,6 +1,6 @@
 package ru.sbt;
 
-import java.io.File;
+import ru.plugins.Plugin;
 
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException {
@@ -13,7 +13,7 @@ public class Main {
         Plugin pluginTest = pm.load("/home/irisha/Projects/ClassLoaderProject/ClassLoader/out/production/untitled/ru/sbt/", "MyPlugin.class");
         System.out.println(pluginTest.pluginInfo());
         pluginMobile = pluginTest;
-        System.out.println("New mobile plugin is: " + pluginMobile.pluginInfo());
+        System.out.println("New mobile plugins is: " + pluginMobile.pluginInfo());
 
 
     }

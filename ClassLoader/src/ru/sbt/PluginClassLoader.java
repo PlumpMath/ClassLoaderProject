@@ -11,7 +11,6 @@ import java.lang.reflect.Method;
 public class PluginClassLoader extends ClassLoader {
 
     private File dir;
-    private Method resolve, define;
 
     public PluginClassLoader(File dir, ClassLoader parent) throws NoSuchMethodException {
         super(parent);
@@ -23,6 +22,7 @@ public class PluginClassLoader extends ClassLoader {
         try {
             File file = new File(dir + "/" + className);
             byte[] b = loadClassData(file);
+            System.out.println(className);
             return defineClass(null, b, 0, b.length);
         } catch (FileNotFoundException ex) {
             return super.findClass(className);

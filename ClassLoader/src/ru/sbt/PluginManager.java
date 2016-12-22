@@ -1,5 +1,7 @@
 package ru.sbt;
 
+import ru.plugins.Plugin;
+
 import java.io.File;
 
 public class PluginManager {

@@ -1,4 +1,4 @@
-package ru.sbt;
+package ru.plugins;
 
 public interface Plugin {
 

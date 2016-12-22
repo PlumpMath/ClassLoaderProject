@@ -1,5 +1,7 @@
 package ru.sbt;
 
+import ru.plugins.Plugin;
+
 /**
  * Created by Irina Kamalova on 03.12.16.
  */
